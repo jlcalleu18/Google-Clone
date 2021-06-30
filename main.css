@@ -14,7 +14,20 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+header nav .nav-left-section {
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: left;
+  align-items: center;
+  font-size: 14px;
+}
+nav .nav-left-section a {
+  margin-right: 20px;
+  color: #000000;
 }
 header nav .nav-right-section {
   width: 250px;
@@ -25,20 +38,34 @@ header nav .nav-right-section {
   align-items: center;
 }
 nav .nav-right-section a {
-  margin-right: 10px;
+  margin-right: 20px;
   color: #000000;
 }
 nav .nav-right-section .menu-icon {
-  background-image: url("https://icon-library.com/images/app-menu-icon/app-menu-icon-10.jpg");
+  background-image: url("https://image.flaticon.com/icons/png/512/60/60991.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
 }
+nav ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+nav .nav-right-section .menu-icon:hover {
+  box-shadow: 0 1px 5px 0 #20212447;
+  cursor: pointer;
+}
+
 nav .nav-right-section img {
   border-radius: 50%;
   margin-left: 10px;
+}
+nav .nav-right-section img:hover {
+  box-shadow: 0 1px 5px 0 #20212447;
+  cursor: pointer;
 }
 /* ------------------- main ---------------- */
 main {
@@ -93,5 +120,79 @@ main .main-input .micro-icon {
   background-size: contain;
   width: 18px;
   height: 18px;
+  cursor: pointer;
+}
+main .main-buttons {
+  width: 530px;
+  margin: 0 auto;
+}
+main .main-buttons div {
+  display: inline-block;
+}
+main .main-buttons button {
+  height: 36px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  color: #3c4043;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+main .main-buttons button:hover {
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px 0 #20212447;
+  color: #222;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  font-size: 14px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #f2f2f2;
+}
+footer ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+footer .footer-left {
+  justify-self: left;
+}
+footer .footer-center {
+  justify-self: center;
+}
+
+footer .footer-right {
+  justify-self: right;
+}
+footer .footer-center .carbon {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAYCAMAAAAiV0Z6AAAAPFBMVEVLoEN0wU6CzFKCzFKCzFKCzFKCzFJSo0MSczNDmkCCzFJPoUMTczNdr0gmgziCzFITczMTczMTczMTczPh00jOAAAAFHRSTlPF/+bIsms8Ad///hX+//5/tXw7aMEAx10AAACaSURBVHgBbc4HDoRQCATQ33tbvf9dF9QxaCT9UQaltLHOh/golXKhMs5Xqa0xU1lyoa2fXFyQOsDG38qsLy4TaV+sFislovyhPzLJJrBu6eQOtpW0LjbJkzTuTDLRVNKa3uxJI+VdiRqXSeu6GW+Qxi29eLIi8H7EsYrT42BD+mQtNO5JMjRuC4lSY8V4hsLX0egGijvUSEP9AbylEsOkeCgWAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
+}
+footer .footer-right li a {
+  margin: 10px;
+  color: #707579;
+}
+footer .footer-center li a {
+  margin: 5px;
+  color: #707579;
+}
+footer .footer-left li a {
+  margin: 10px;
+  color: #707579;
+}
+footer ul li a:hover {
+  text-decoration: underline;
   cursor: pointer;
 }
